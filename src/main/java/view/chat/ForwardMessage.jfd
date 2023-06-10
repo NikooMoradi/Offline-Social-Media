@@ -1,0 +1,64 @@
+JFDML JFormDesigner: "7.0.5.4.420" Java: "11.0.11" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+			name: "this"
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+				name: "panel1"
+				add( new FormComponent( "javax.swing.JComboBox" ) {
+					name: "messageComboBox"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 110
+					"y": 25
+					"width": 275
+				} )
+				add( new FormComponent( "javax.swing.JComboBox" ) {
+					name: "chatComboBox"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 275
+					"height": 30
+					"x": 110
+					"y": 60
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "messageLabel"
+					"text": "message:"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 25
+					"y": 25
+					"height": 30
+					"width": 80
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "chatLabel"
+					"text": "chat:"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 80
+					"height": 30
+					"x": 25
+					"y": 60
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "forwardButton"
+					"text": "forward"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "forward", true ) )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 140
+					"y": 120
+					"width": 135
+					"height": 30
+				} )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 400
+				"height": 165
+				"x": 0
+				"y": 0
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 215, 30 )
+			"size": new java.awt.Dimension( 400, 195 )
+		} )
+	}
+}

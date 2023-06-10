@@ -1,0 +1,88 @@
+JFDML JFormDesigner: "7.0.5.4.420" Java: "11.0.11" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+			name: "this"
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": "Activities "
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 100
+				"height": 30
+				"x": 10
+				"y": 5
+			} )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane1"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 425
+				"height": 215
+				"x": 0
+				"y": 85
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "yesterdayButton"
+				"text": "Yesterday"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "yesterday", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 85
+				"y": 35
+				"height": 30
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "todayButton"
+				"text": "Today"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "today", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 78
+				"height": 30
+				"x": 5
+				"y": 35
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "weekButton"
+				"text": "Week"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "week", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 78
+				"height": 30
+				"x": 175
+				"y": 35
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "yearButton"
+				"text": "Year"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "year", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 78
+				"height": 30
+				"x": 335
+				"y": 35
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "monthButton"
+				"text": "Month"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "month", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 78
+				"height": 30
+				"x": 250
+				"y": 35
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+				"text": "Black for post yellow for comment and blue for reaction "
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 335
+				"height": 30
+				"x": 90
+				"y": 5
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 235, 60 )
+			"size": new java.awt.Dimension( 425, 300 )
+		} )
+	}
+}
